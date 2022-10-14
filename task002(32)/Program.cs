@@ -10,23 +10,29 @@ Console.WriteLine();
 int[] newArray = ReverseEl(array);
 WriteArray(newArray);
 
-int[] NewArray(int size){
+int[] NewArray(int size)
+{
     int[] array = new int[size];
-    for(int i = 0; i < size; i++){
+    for (int i = 0; i < size; i++)
+    {
         array[i] = new Random().Next(size * -1, size);
     }
     return array;
 }
 
-int[] ReverseEl(int[] arr){
-    for(int i = 0; i<arr.Length;i++){
-         arr[i] *= -1;
+int[] ReverseEl(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        arr[i] *= -1;
     }
     return arr;
 }
 
-void WriteArray(int[] arr){
-    for(int i=0; i<arr.Length;i++){
+void WriteArray(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
         Console.Write($"{arr[i]} ");
     }
 }
