@@ -20,7 +20,7 @@ else{
 
 int UserInput(){
     Console.Write("Enter number: ");
-    int number = int.Parse(Console.ReadLine());
+    int number = int.Parse(Console.ReadLine()!);
     return number;
 }
 
