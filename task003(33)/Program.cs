@@ -11,38 +11,48 @@ WriteArray(array);
 
 Console.WriteLine();
 
-if (value > 0){
+if (value > 0)
+{
     Console.WriteLine($"Number {number} yes!");
 }
-else{
+else
+{
     Console.WriteLine($"Number {number} no!");
 }
 
-int UserInput(){
+int UserInput()
+{
     Console.Write("Enter number: ");
     int number = int.Parse(Console.ReadLine()!);
     return number;
 }
 
-int[] NewArray(int size){
+int[] NewArray(int size)
+{
     int[] array = new int[size];
-    for(int i = 0; i < size; i++){
+    for (int i = 0; i < size; i++)
+    {
         array[i] = new Random().Next(size * -1, size);
     }
     return array;
 }
 
- int FindInArray(int[] array){
-    foreach(int el in array){
-        if(el == number){
+int FindInArray(int[] array)
+{
+    foreach (int el in array)
+    {
+        if (el == number)
+        {
             isOrNot += 1;
         }
     }
     return isOrNot;
 }
 
-void WriteArray(int[] arr){
-    for(int i=0; i<arr.Length;i++){
+void WriteArray(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
         Console.Write($"{arr[i]} ");
     }
 }
