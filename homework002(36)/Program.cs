@@ -22,6 +22,7 @@ int[] FillArray(int size)
     for (int i = 0; i < size; i++)
     {
         arr[i] = new Random().Next(size * -1, size);
+        // arr[i] = new Random().Next();
         Console.Write($"{arr[i]} ");
     }
 
